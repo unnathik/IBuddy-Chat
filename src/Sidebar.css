@@ -19,7 +19,7 @@
     text-align: center;
 }
 
-.sidebar__channels {
+.sidebar__channels, .sidebar__resources {
     flex: 1;
     overflow-y: auto;
 }
@@ -32,7 +32,7 @@
     color: white;
 }
 
-.sidebar__channelsHeader {
+.sidebar__channelsHeader,  .sidebar__resourcesHeader{
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -95,3 +95,97 @@
 .sidebar__profileIcons > .MuiSvgIcon-root {
     padding: 10px;
 }
+
+.sidebar__resourcesList1 > h4 {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    background-color: #16262E;
+    color: gray;
+    cursor: pointer;
+}
+
+.sidebarResources__hash {
+    font-size: 30px;
+    padding: 8px;
+}
+
+.sidebar__resourcesList1:hover > h4 {
+    color: white;
+    background-color: #40464b;
+}
+
+.sidebar__resourcesList2:hover > h4 {
+    color: white;
+    background-color: #40464b;
+}
+
+.sidebar__resourcesList2 > h4 {
+    display: flex;
+    padding-left: 15px;
+    align-items: center;
+    background-color: #16262E;
+    color: gray;
+    cursor: pointer;
+}
+
+.modal {
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%) scale(0);
+    transition: 200ms ease-in-out;
+    border: 1px solid black;
+    border-radius: 10px;
+    z-index: 10;
+    background-color: white;
+    width: 500px;
+    max-width: 80%;
+}
+
+.modal.active {
+    transform: translate(-50%, -50%) scale(1);
+}
+
+.modal-header {
+    padding: 10px 15px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border-bottom: 1px solid black;
+}
+
+.modal-header .title {
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-header .close-button {
+    cursor: pointer;
+    border: none;
+    outline: none;
+    background: none;
+    font-size: 1.25rem;
+    font-weight: bold;
+}
+
+.modal-body {
+    padding: 10px 15px;
+}
+
+#overlay {
+    position: fixed;
+    opacity: 0;
+    transition: 200ms ease-in-out;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, .5);
+    pointer-events: none;
+  }
+  
+  #overlay.active {
+    opacity: 1;
+    pointer-events: all;
+  }
