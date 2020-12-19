@@ -1,7 +1,7 @@
 import { React, useEffect, useState } from 'react'
 import "./Sidebar.css"
 import ExpandMoreIcon from '@material-ui/icons/ExpandMore';
-import "./script"
+// import "./script"
 import AddIcon from "@material-ui/icons/Add"
 import { useSelector } from "react-redux";
 import SidebarChannel from "./SidebarChannel"
@@ -57,7 +57,7 @@ function Sidebar() {
             </div>
         </div>
 
-        <div className="sidebar__resources">
+        {/* <div className="sidebar__resources">
             <div className="sidebar__resourcesHeader">
                 <div className="sidebar__header">
                     <ExpandMoreIcon />
@@ -84,7 +84,7 @@ function Sidebar() {
             <div className="sidebar__resourcesList2">
                 <h4><span className='sidebarResources__hash'>#</span>Group 2</h4>
             </div>
-        </div>
+        </div> */}
 
 
         <div className="sidebar__profile">
