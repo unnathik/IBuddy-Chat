@@ -16,6 +16,6 @@ For the IBuddy chat, we used ReactJS along with Redux, Firebase Authentication, 
 
 This was our team's first time working with Redux, so that was slightly difficult. Also, it was difficult to integrate the IBuddy chat (given that it was developed as a separate product) into the frontend (homepage + resources + blog), due to difference in their programming languages. However, we were able to overcome this using a hosting service like Heroku and then linking the IBuddy chat.
 
-## What's next for IBuddy
+### What's next for IBuddy
 
 We'd like to get more users to create healthy conversation on the chat and keep adding additional (even proprietary) resources to IBuddy resources. We'd also like to integrate a toxic language filter and detector to ensure that the conversation is always positive.
